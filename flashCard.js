@@ -27,10 +27,11 @@ function clozeCard(text, cloze)
 
 	var partialTextReturn = function()
 	{
-//Idea.....use a .split()
+//Idea.....use a .split() or .replace()
 	var split = text.split("partial problems");
-	console.log(text.replace("partial problems", "_________"));
-	console.log(split)
+	console.log(split);
+	
+	console.log(text.replace(split, "_________"));
 
 	}
 
