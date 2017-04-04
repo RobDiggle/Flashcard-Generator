@@ -48,17 +48,16 @@ function clozeCard(text, cloze)
 
 // ClozeCard should throw or log an error when the cloze deletion does not appear in the input text.
 
-	var errorMessage = function()
-	{
-		if()
-		{
+	// var errorMessage = function()
+	// {
+	// 	if()
+	// 	{
 
-		}
-	}
+	// 	}
+	// }
 
 } 
 
-$().click
 
 var wittgensteinOne = new basicCard("In what city was Ludwig Wittgenstein born?", "Vienna");
 console.log("Question: " + wittgensteinOne.front);
