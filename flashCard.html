@@ -2,29 +2,92 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>FlashCard Wittgenstein app</title>
+  <style type="text/css">
+	
+body
+	{
+		background: beige;
+	}
+
+	#title
+	{
+		text-align: center;
+	}
+
+	#generator
+	{
+		text-align: center;
+	}
+
+	#drop
+	{
+			display: block;
+   		    margin: auto;
+    		width: 40%;	}
+
+	p
+	{
+		text-align: center;
+	}
+
+	#mainImage
+	{
+		    display: block;
+   		    margin: auto;
+	}
+
+	#audioCenter
+	{
+			display: block;
+   		    margin: auto;
+    		width: 40%;	
+	}
+
+
+
+	.underline
+	{
+		text-decoration: underline;
+	}
+
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <script src="flashCard.js"></script>
   <style type="text/css">
    
   </style>
   </head>
   <body>
+
+  <h2 id="title"> Ludwig Wittgenstein study app </h2>
   
- <p> Instructions: </p>/
+<img src="witt.jpg" id="mainImage" alt="Picture of Ludwig Wittgenstein" height="230" width="166">
+
+<audio controls id="audioCenter">
+  <source src="bach_music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+ <p> Instructions: </p>
  <p> In order to help study the various quotes of Ludwig Wittgenstein here is an application which will generate random quotes of his for you. 
  	These quotes will be missing certain portions, which you will need to fill in. 
  <p> 
 <button id="generator"> Push me to generate a quote by Ludwig Wittgenstein </button>
 <p>
 
-<input type="text" name="guess">
-<br>
-<button id="submit">Submit letter or word guesses</button>
 
 
 <div id="generated"></div>
 
-
+<p>
+<button> Show cloze quote portion.</button>
+<p>
+<div id="clozeGenerated"></div>
+ 
 
 
 
@@ -36,6 +99,5 @@
 
 
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   </body>
 </html>
