@@ -82,13 +82,6 @@ console.log("_____________________________________________")
 var wittgensteinQuoteThree = new clozeCard("Philosophy aims at the logical clarification of thoughts. Philosophy is not a body of doctrine but an activity. A philosophical work consists essentially of elucidations. Philosophy does not result in 'philosophical propositions', but rather in the clarification of propositions. Without philosophy thoughts are, as it were, cloudy and indistinct: its task is to make them clear and to give them sharp boundaries. (4.112)",
  "not a body of doctrine but an activity");
 
-//There ought to be a way for the user to generate there own flashcards.
-$(document).ready(function(){
-
-$('#generator').click(function()
-{
-	console.log("Button clicked.")
-})
 	var quotes= 
 	[
 	"Logic takes care of itself; all we have to do is to look and see how it does it.",
@@ -100,7 +93,22 @@ $('#generator').click(function()
 
 	];
 
-	var clozeQuote =['Logic','expression','partial problems','questions which do not concern him.','Conscience','mystical','purpose of life']	]
+	var clozeQuote =['Logic','expression','partial problems','questions which do not concern him.','Conscience','mystical','purpose of life'];
+
+
+//There ought to be a way for the user to generate there own flashcards.
+$(document).ready(function(){
+
+console.log("jQuery working")
+$('#generator').click(function()
+{
+	$('#generated').text(quotes[Math.floor(Math.random() * quotes.length)])
+});
+
+$('#clozeQuoteGenerator').click(function()
+{
+	$('#clozeGenerated').text(clozeQuote[Math.floor(Math.random() * clozeQuote.length)])
+});
 
 
 
